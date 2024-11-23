@@ -39,7 +39,7 @@ const NoteList = () => {
           if (error.response?.status === 404) {
             // Backend returned 404 with "No notes found" message.
             setFilteredNotes([]);
-            setNoNotesMessage("No notes found matching the criteria.");
+            setNoNotesMessage("No notes found.");
           } else {
             toast.error("Failed to fetch notes. Please try again.");
             console.error("Error fetching notes:", error);
